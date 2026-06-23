@@ -1,0 +1,44 @@
+<svg width="900" height="900" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="900" fill="none"/>
+  <g opacity="0.72">
+    <path d="M135 450H765" stroke="#426B5F" stroke-width="1.5" stroke-dasharray="8 14"/>
+    <path d="M450 135V765" stroke="#426B5F" stroke-width="1.5" stroke-dasharray="8 14"/>
+    <path d="M214 214L686 686" stroke="#B66F32" stroke-width="1.2" stroke-dasharray="6 14"/>
+    <path d="M686 214L214 686" stroke="#2AA7A2" stroke-width="1.2" stroke-dasharray="6 14"/>
+    <circle cx="450" cy="450" r="218" stroke="#141414" stroke-width="1.4"/>
+    <circle cx="450" cy="450" r="312" stroke="#426B5F" stroke-width="1.1" stroke-dasharray="10 18"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="314" y="314" width="272" height="272" rx="24" fill="#F7F8F6" stroke="#D8DED6" stroke-width="2"/>
+    <text x="450" y="432" text-anchor="middle" fill="#141414" font-family="Inter, Arial, sans-serif" font-size="74" font-weight="800">CZ</text>
+    <text x="450" y="484" text-anchor="middle" fill="#426B5F" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">作品系统</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="94" y="178" width="238" height="92" rx="18" fill="#F7F8F6" stroke="#D8DED6" stroke-width="2"/>
+    <circle cx="137" cy="224" r="16" fill="#2AA7A2"/>
+    <text x="172" y="217" fill="#141414" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800">虎虎豹豹</text>
+    <text x="172" y="244" fill="#426B5F" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600">AI 宠物 IP</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="592" y="206" width="238" height="92" rx="18" fill="#F7F8F6" stroke="#D8DED6" stroke-width="2"/>
+    <circle cx="635" cy="252" r="16" fill="#B66F32"/>
+    <text x="670" y="245" fill="#141414" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800">Mg 调查档案</text>
+    <text x="670" y="272" fill="#426B5F" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600">故事化拆解</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="538" y="650" width="238" height="92" rx="18" fill="#F7F8F6" stroke="#D8DED6" stroke-width="2"/>
+    <circle cx="581" cy="696" r="16" fill="#8B3F54"/>
+    <text x="616" y="689" fill="#141414" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800">知乎写作计划</text>
+    <text x="616" y="716" fill="#426B5F" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600">长文回答</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="122" y="610" width="220" height="78" rx="18" fill="#141414" stroke="#426B5F" stroke-width="2"/>
+    <text x="232" y="643" text-anchor="middle" fill="#F7F8F6" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">产品方法</text>
+    <text x="232" y="668" text-anchor="middle" fill="#2AA7A2" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">选题 / 节奏 / 复盘</text>
+  </g>
+  <defs>
+    <filter id="shadow" x="60" y="140" width="800" height="660" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#141414" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+</svg>
