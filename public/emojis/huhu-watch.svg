@@ -1,0 +1,10 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" rx="64" fill="#F6F7F5"/>
+  <circle cx="400" cy="350" r="210" fill="#101214"/>
+  <path d="M224 196L340 298L176 330Z" fill="#2B3032"/>
+  <path d="M576 196L460 298L624 330Z" fill="#2B3032"/>
+  <circle cx="326" cy="346" r="18" fill="#F6F7F5"/>
+  <circle cx="474" cy="346" r="18" fill="#F6F7F5"/>
+  <path d="M336 466H468" stroke="#F6F7F5" stroke-width="18" stroke-linecap="round"/>
+  <text x="400" y="680" text-anchor="middle" fill="#268884" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="900">冷静观察</text>
+</svg>

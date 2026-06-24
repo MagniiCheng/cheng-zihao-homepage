@@ -1,0 +1,14 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="750" fill="#101214"/>
+  <path d="M0 580C220 485 420 490 620 560C820 630 1000 620 1200 520V750H0V580Z" fill="#1B1F21"/>
+  <circle cx="880" cy="190" r="170" fill="#268884" fill-opacity=".18"/>
+  <path d="M500 520C430 512 365 458 340 384C310 298 348 206 430 165L458 251C504 222 568 211 640 232C740 262 806 350 792 443C778 536 681 542 596 528L500 520Z" fill="#F6F7F5"/>
+  <path d="M432 166L463 252L360 212C378 191 400 176 432 166Z" fill="#DCE1DE"/>
+  <path d="M706 260L780 204L756 326" fill="#DCE1DE"/>
+  <path d="M470 400C530 430 604 430 670 396" stroke="#101214" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="492" cy="340" r="14" fill="#101214"/>
+  <circle cx="650" cy="340" r="14" fill="#101214"/>
+  <path d="M575 367L602 367L588 388Z" fill="#101214"/>
+  <text x="72" y="126" fill="#F6F7F5" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="900">虎虎</text>
+  <text x="76" y="178" fill="#47CCC6" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Maine Coon / Patrol Expert</text>
+</svg>

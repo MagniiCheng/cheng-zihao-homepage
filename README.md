@@ -1,14 +1,19 @@
-# 程子豪个人主页
+# Magnii个人品牌官网 V2
 
-一个基于 Next.js 和 Tailwind CSS 的单页个人主页，适配桌面端和移动端，适合部署到 Vercel。
+基于 Next.js App Router、TypeScript 和 Tailwind CSS 的个人品牌官网，适配桌面端和移动端，面向 Vercel 部署。
 
-## 技术栈
+## 已包含页面
 
-- Next.js App Router
-- React
-- Tailwind CSS
-- TypeScript
-- lucide-react 图标
+- `/` 首页：Hero、头像上传预览、联系方式复制、最新动态、项目入口
+- `/projects` 项目中心
+- `/pets` 虎虎豹豹专区
+- `/pets/timeline` 成长记录
+- `/pets/emojis` 表情包中心
+- `/pets/gallery` 照片图库
+- `/mg` Mg调查档案
+- `/mg/[slug]` 文章详情页
+- `/resources` 资源中心
+- `/ai` 未来 AI 产品入口预留
 
 ## 本地运行
 
@@ -18,13 +23,13 @@ pnpm install
 pnpm dev
 ```
 
-浏览器打开：
+打开：
 
 ```text
 http://localhost:3000
 ```
 
-生产构建检查：
+生产构建：
 
 ```bash
 pnpm build
@@ -32,19 +37,24 @@ pnpm build
 
 ## 部署到 Vercel
 
-1. 将 `outputs/cheng-zihao-homepage` 目录推送到 GitHub、GitLab 或 Bitbucket 仓库。
-2. 打开 [Vercel](https://vercel.com)，点击 `Add New...`，选择 `Project`。
-3. 导入刚才的仓库。
+1. 将项目推送到 GitHub。
+2. 打开 [Vercel](https://vercel.com)，选择 `Add New...` -> `Project`。
+3. 导入该仓库。
 4. Framework Preset 选择 `Next.js`。
-5. Build Command 保持 `pnpm build`。
-6. Output Directory 保持默认。
-7. 点击 `Deploy`。
+5. Install Command 使用 `pnpm install`。
+6. Build Command 使用 `pnpm build`。
+7. Output Directory 保持默认。
+8. 点击 `Deploy`。
 
-部署完成后，可以在 Vercel 项目设置里绑定自定义域名。
+Vercel Analytics 已在根布局中接入，上线后可在 Vercel 项目面板查看访问量、页面访问排行、来源和设备数据。
 
-## 内容修改位置
+## 内容维护
 
-- 页面内容：`app/page.tsx`
-- 全局样式：`app/globals.css`
-- Tailwind 配置：`tailwind.config.ts`
-- 邮箱复制按钮：`components/CopyEmailButton.tsx`
+- 全站内容数据：`lib/site-data.ts`
+- 首页：`app/page.tsx`
+- 全局布局与 SEO：`app/layout.tsx`
+- robots：`app/robots.ts`
+- sitemap：`app/sitemap.ts`
+- 静态资源目录：`public/avatar`、`public/pets`、`public/gallery`、`public/emojis`、`public/mg`、`public/downloads`
+
+当前上传能力为前端预留形态：头像和图库支持本地选择、预览、圆形裁剪或删除，不会写入服务器。正式管理员上传可继续接入 Vercel Blob、CMS 或自建后台 API。

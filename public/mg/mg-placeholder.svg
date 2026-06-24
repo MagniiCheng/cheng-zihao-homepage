@@ -1,0 +1,6 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" fill="#111315"/>
+  <rect x="96" y="90" width="1008" height="495" rx="28" fill="#1B1F21" stroke="#33383A" stroke-width="2"/>
+  <path d="M238 458L520 178L702 360L822 240L964 458" stroke="#F6F7F5" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="150" y="168" fill="#47CCC6" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="900">Reserved Case File</text>
+</svg>

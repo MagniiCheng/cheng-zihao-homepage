@@ -5,8 +5,29 @@
 :root {
   --font-geist-sans: Inter, ui-sans-serif, system-ui, -apple-system,
     BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --background: #f7f8f6;
-  --foreground: #141414;
+  --background: 246 247 245;
+  --foreground: 18 18 18;
+  --surface: 255 255 255;
+  --surface-strong: 242 244 242;
+  --muted: 92 98 96;
+  --line: 217 221 216;
+  --accent: 38 136 132;
+  --accent-2: 180 111 50;
+  --accent-3: 139 63 84;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: 8 9 10;
+    --foreground: 242 244 242;
+    --surface: 17 18 20;
+    --surface-strong: 27 29 31;
+    --muted: 164 169 166;
+    --line: 48 52 53;
+    --accent: 71 204 198;
+    --accent-2: 224 149 86;
+    --accent-3: 224 112 142;
+  }
 }
 
 * {
@@ -20,28 +41,73 @@ html {
 body {
   min-height: 100vh;
   margin: 0;
-  color: var(--foreground);
+  color: rgb(var(--foreground));
   background:
-    linear-gradient(180deg, rgba(247, 248, 246, 0.92), rgba(247, 248, 246, 1)),
-    radial-gradient(circle at 16px 16px, rgba(66, 107, 95, 0.16) 1px, transparent 1.5px);
+    linear-gradient(180deg, rgba(var(--background), 0.96), rgb(var(--background))),
+    radial-gradient(circle at 16px 16px, rgba(var(--accent), 0.12) 1px, transparent 1.5px);
   background-size: auto, 32px 32px;
   font-family: var(--font-geist-sans);
 }
 
-::selection {
-  color: #f7f8f6;
-  background: #426b5f;
+@media (prefers-color-scheme: dark) {
+  body {
+    background:
+      linear-gradient(180deg, rgba(8, 9, 10, 0.96), rgb(8, 9, 10)),
+      radial-gradient(circle at 16px 16px, rgba(71, 204, 198, 0.08) 1px, transparent 1.5px);
+  }
 }
 
-.tech-panel {
+::selection {
+  color: rgb(var(--background));
+  background: rgb(var(--accent));
+}
+
+.site-shell {
+  min-height: 100vh;
+}
+
+.page-section {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .page-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.glass-panel {
+  border: 1px solid rgba(var(--line), 0.82);
+  background: rgba(var(--surface), 0.76);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(22px);
+}
+
+.quiet-card {
+  border: 1px solid rgba(var(--line), 0.9);
+  background: rgba(var(--surface), 0.8);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.06);
+}
+
+.tech-panel,
+.dark-panel {
   background:
-    linear-gradient(135deg, rgba(20, 20, 20, 0.92), rgba(40, 58, 52, 0.92)),
-    linear-gradient(90deg, rgba(42, 167, 162, 0.15) 1px, transparent 1px),
-    linear-gradient(rgba(42, 167, 162, 0.12) 1px, transparent 1px);
+    linear-gradient(135deg, rgba(12, 13, 14, 0.96), rgba(33, 38, 37, 0.94)),
+    linear-gradient(90deg, rgba(var(--accent), 0.14) 1px, transparent 1px),
+    linear-gradient(rgba(var(--accent), 0.12) 1px, transparent 1px);
   background-size: auto, 26px 26px, 26px 26px;
 }
 
-.project-card {
+.card-link {
   transition:
     transform 180ms ease,
     box-shadow 180ms ease,
@@ -49,16 +115,39 @@ body {
     background 180ms ease;
 }
 
-.project-card:hover {
+.card-link:hover {
   transform: translateY(-6px);
-  border-color: rgba(66, 107, 95, 0.42);
-  background: rgba(255, 255, 255, 0.82);
-  box-shadow: 0 18px 60px rgba(20, 20, 20, 0.12);
+  border-color: rgba(var(--accent), 0.48);
+  background: rgba(var(--surface), 0.9);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.14);
 }
 
-.project-card:focus-visible,
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(var(--line), 0.42) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--line), 0.42) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: radial-gradient(circle at 50% 40%, black 0%, transparent 72%);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@supports not (text-wrap: balance) {
+  .text-balance {
+    text-wrap: normal;
+  }
+}
+
 button:focus-visible,
-a:focus-visible {
-  outline: 3px solid rgba(42, 167, 162, 0.45);
+a:focus-visible,
+input:focus-visible {
+  outline: 3px solid rgba(var(--accent), 0.42);
   outline-offset: 4px;
+}
+
+button:focus-visible,
+input:focus-visible {
+  border-radius: 8px;
 }

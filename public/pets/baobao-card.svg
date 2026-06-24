@@ -1,0 +1,14 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="750" fill="#F6F7F5"/>
+  <path d="M0 548C180 462 360 446 560 526C760 606 960 604 1200 486V750H0V548Z" fill="#E5E9E4"/>
+  <circle cx="850" cy="206" r="180" fill="#B46F32" fill-opacity=".16"/>
+  <path d="M412 488C332 420 326 300 398 224C470 148 600 140 704 206C814 276 846 410 756 490C676 560 502 564 412 488Z" fill="#FFFFFF"/>
+  <path d="M387 252C356 202 334 150 338 106C382 116 426 154 460 206" fill="#FFFFFF"/>
+  <path d="M726 224C760 174 804 140 852 132C850 184 826 234 786 274" fill="#FFFFFF"/>
+  <circle cx="496" cy="344" r="15" fill="#101214"/>
+  <circle cx="668" cy="344" r="15" fill="#101214"/>
+  <path d="M574 382C604 410 640 410 674 382" stroke="#101214" stroke-width="12" stroke-linecap="round"/>
+  <path d="M574 370L604 370L588 392Z" fill="#101214"/>
+  <text x="72" y="126" fill="#101214" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="900">豹豹</text>
+  <text x="76" y="178" fill="#B46F32" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Samoyed / Sunshine Operator</text>
+</svg>

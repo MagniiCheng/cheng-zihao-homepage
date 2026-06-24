@@ -1,0 +1,10 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" rx="64" fill="#101214"/>
+  <path d="M116 508C250 418 378 392 562 420" stroke="#47CCC6" stroke-width="18" stroke-linecap="round"/>
+  <path d="M162 590C296 500 424 474 608 502" stroke="#B46F32" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="430" cy="330" r="185" fill="#FFFFFF"/>
+  <circle cx="360" cy="320" r="18" fill="#101214"/>
+  <circle cx="496" cy="320" r="18" fill="#101214"/>
+  <path d="M382 416C420 450 466 450 502 416" stroke="#101214" stroke-width="16" stroke-linecap="round"/>
+  <text x="400" y="680" text-anchor="middle" fill="#F6F7F5" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="900">突然热情</text>
+</svg>
