@@ -5,7 +5,7 @@ const staticRoutes = [
   "",
   "/projects",
   "/pets",
-  "/pets/timeline",
+  "/pets/growth",
   "/pets/emojis",
   "/pets/gallery",
   "/mg",
@@ -14,7 +14,7 @@ const staticRoutes = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date("2026-06-24");
+  const now = new Date("2026-06-25");
   const routes = staticRoutes.map((route) => ({
     url: `${siteConfig.url}${route}`,
     lastModified: now,

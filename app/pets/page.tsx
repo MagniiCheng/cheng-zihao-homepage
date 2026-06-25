@@ -7,7 +7,7 @@ import { pets } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "虎虎豹豹 | Magnii",
-  description: "虎虎豹豹 AI 宠物 IP 官网专区：缅因猫虎虎与萨摩耶豹豹的角色设定、成长记录、表情包和图库。"
+  description: "虎虎豹豹 AI 宠物 IP 官网专区：缅因猫虎虎与萨摩耶豹豹的角色设定、成长档案、表情包和图库。"
 };
 
 export default function PetsPage() {
@@ -70,7 +70,7 @@ export default function PetsPage() {
 
         <div className="mt-8 grid gap-4 md:grid-cols-3">
           {[
-            { label: "成长记录", href: "/pets/timeline" },
+            { label: "成长档案", href: "/pets/growth" },
             { label: "表情包中心", href: "/pets/emojis" },
             { label: "照片图库", href: "/pets/gallery" }
           ].map((item) => (

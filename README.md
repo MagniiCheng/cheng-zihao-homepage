@@ -7,7 +7,7 @@
 - `/` 首页：Hero、头像上传预览、联系方式复制、最新动态、项目入口
 - `/projects` 项目中心
 - `/pets` 虎虎豹豹专区
-- `/pets/timeline` 成长记录
+- `/pets/growth` 成长档案
 - `/pets/emojis` 表情包中心
 - `/pets/gallery` 照片图库
 - `/mg` Mg调查档案

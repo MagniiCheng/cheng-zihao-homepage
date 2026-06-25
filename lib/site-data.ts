@@ -77,9 +77,74 @@ export const pets = [
 
 export const petTimeline = [
   { date: "2026-02-11", title: "豹豹到家", pet: "豹豹" },
+  { date: "2026-03-05", title: "虎虎到家", pet: "虎虎" },
   { date: "2026-03-08", title: "虎虎体重 1.3kg", pet: "虎虎" },
   { date: "2026-06-08", title: "虎虎体重 4kg", pet: "虎虎" },
-  { date: "2026-06-10", title: "豹豹体重 15.7kg", pet: "豹豹" }
+  { date: "2026-06-10", title: "豹豹体重 15.7kg", pet: "豹豹" },
+  { date: "2026-06-22", title: "豹豹体重 16.6kg", pet: "豹豹" },
+  { date: "2026-06-22", title: "虎虎体重 4.1kg", pet: "虎虎" }
+];
+
+export const growthStatisticsAsOf = "2026-06-22";
+
+export const petGrowthProfiles = [
+  {
+    name: "豹豹",
+    species: "萨摩耶",
+    birthday: "2025-10-28",
+    arrivalDate: "2026-02-11",
+    initialWeightKg: 8.4,
+    currentWeightKg: 16.6,
+    weightRecords: [
+      { date: "2026-02-11", weightKg: 8.4, note: "到家初始体重" },
+      { date: "2026-06-10", weightKg: 15.7, note: "阶段记录" },
+      { date: "2026-06-22", weightKg: 16.6, note: "当前体重" }
+    ],
+    futureRecords: {
+      heightCm: null,
+      bodyLengthCm: null,
+      chestCm: null,
+      photos: [],
+      vaccines: [],
+      deworming: [],
+      neutering: null,
+      checkups: []
+    }
+  },
+  {
+    name: "虎虎",
+    species: "缅因猫",
+    birthday: "2026-01-05",
+    arrivalDate: "2026-03-05",
+    initialWeightKg: 1.3,
+    currentWeightKg: 4.1,
+    weightRecords: [
+      { date: "2026-03-08", weightKg: 1.3, note: "初始体重记录" },
+      { date: "2026-06-08", weightKg: 4.0, note: "阶段记录" },
+      { date: "2026-06-22", weightKg: 4.1, note: "当前体重" }
+    ],
+    futureRecords: {
+      heightCm: null,
+      bodyLengthCm: null,
+      chestCm: null,
+      photos: [],
+      vaccines: [],
+      deworming: [],
+      neutering: null,
+      checkups: []
+    }
+  }
+];
+
+export const petFutureRecordFields = [
+  "身高记录",
+  "体长记录",
+  "胸围记录",
+  "照片记录",
+  "疫苗记录",
+  "驱虫记录",
+  "绝育记录",
+  "体检记录"
 ];
 
 export const emojis = [
