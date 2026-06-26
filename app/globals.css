@@ -151,3 +151,15 @@ button:focus-visible,
 input:focus-visible {
   border-radius: 8px;
 }
+
+@keyframes osFade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
