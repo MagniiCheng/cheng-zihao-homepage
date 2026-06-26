@@ -7,7 +7,7 @@ import { useState } from "react";
 import { navItems, siteConfig } from "@/lib/site-data";
 
 function isActive(pathname: string, href: string) {
-  if (href === "/#home") {
+  if (href === "/") {
     return pathname === "/";
   }
 
@@ -26,7 +26,7 @@ export function SiteHeader() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-[rgba(var(--line),0.75)] bg-[rgba(var(--background),0.82)] backdrop-blur-2xl">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-12">
         <Link
-          href="/#home"
+          href="/"
           className="flex items-center gap-3 text-sm font-black tracking-wide text-[rgb(var(--foreground))]"
           onClick={() => setOpen(false)}
         >

@@ -19,12 +19,12 @@ export const siteConfig = {
 };
 
 export const navItems = [
-  { label: "首页", href: "/#home" },
-  { label: "项目中心", href: "/projects" },
-  { label: "虎虎豹豹", href: "/pets" },
-  { label: "Mg调查档案", href: "/mg" },
-  { label: "资源中心", href: "/resources" },
-  { label: "联系我", href: "/#contact" }
+  { label: "首页", href: "/" },
+  { label: "作品", href: "/works" },
+  { label: "生活", href: "/life" },
+  { label: "资料库", href: "/library" },
+  { label: "OS", href: "/os" },
+  { label: "关于", href: "/about" }
 ];
 
 export const updates = [

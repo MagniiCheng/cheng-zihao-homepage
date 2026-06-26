@@ -2,18 +2,24 @@
 
 基于 Next.js App Router、TypeScript 和 Tailwind CSS 的个人品牌官网，适配桌面端和移动端，面向 Vercel 部署。
 
-## 已包含页面
+## 当前页面框架
 
-- `/` 首页：Hero、头像上传预览、联系方式复制、最新动态、项目入口
-- `/projects` 项目中心
+- `/` 工作台
+- `/os` Magnii OS
+- `/works` 作品
+- `/works/research-archive` Mg 调查档案
+- `/works/tiger-baobao` 虎虎豹豹 AI
+- `/life` 生活
+- `/library` 资料库
+- `/about` 关于
+
+历史内容页仍保留，可作为后续栏目内容来源：
+
 - `/pets` 虎虎豹豹专区
 - `/pets/growth` 成长档案
-- `/pets/emojis` 表情包中心
-- `/pets/gallery` 照片图库
-- `/mg` Mg调查档案
-- `/mg/[slug]` 文章详情页
+- `/mg` Mg 调查档案旧列表
 - `/resources` 资源中心
-- `/ai` 未来 AI 产品入口预留
+- `/ai` AI 入口预留
 
 ## 本地运行
 

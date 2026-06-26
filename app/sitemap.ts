@@ -3,6 +3,13 @@ import { mgArticles, siteConfig } from "@/lib/site-data";
 
 const staticRoutes = [
   "",
+  "/os",
+  "/works",
+  "/works/research-archive",
+  "/works/tiger-baobao",
+  "/life",
+  "/library",
+  "/about",
   "/projects",
   "/pets",
   "/pets/growth",
