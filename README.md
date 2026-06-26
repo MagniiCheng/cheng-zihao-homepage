@@ -6,6 +6,7 @@
 
 - `/` 工作台
 - `/os` Magnii OS
+- `/os/principles` 原则
 - `/works` 作品
 - `/works/research-archive` Mg 调查档案
 - `/works/tiger-baobao` 虎虎豹豹 AI

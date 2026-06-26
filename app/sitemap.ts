@@ -4,6 +4,7 @@ import { mgArticles, siteConfig } from "@/lib/site-data";
 const staticRoutes = [
   "",
   "/os",
+  "/os/principles",
   "/works",
   "/works/research-archive",
   "/works/tiger-baobao",
