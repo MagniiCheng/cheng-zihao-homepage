@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { getResearchArchives } from "@/lib/research-archive";
 import { mgArticles, siteConfig } from "@/lib/site-data";
 
 const staticRoutes = [
@@ -37,5 +38,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7
   }));
 
-  return [...routes, ...articleRoutes];
+  const researchArchiveRoutes = getResearchArchives().map((entry) => ({
+    url: `${siteConfig.url}${entry.detailHref}`,
+    lastModified: new Date(entry.updatedAt || entry.date),
+    changeFrequency: "monthly" as const,
+    priority: 0.8
+  }));
+
+  return [...routes, ...articleRoutes, ...researchArchiveRoutes];
 }

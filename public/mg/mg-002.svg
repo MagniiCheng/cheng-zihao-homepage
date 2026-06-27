@@ -3,7 +3,8 @@
   <path d="M0 500C250 418 420 424 624 506C828 588 1008 556 1200 454V675H0V500Z" fill="#E5E9E4"/>
   <rect x="88" y="86" width="500" height="132" rx="18" fill="#101214"/>
   <text x="122" y="142" fill="#F6F7F5" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="900">#002</text>
-  <text x="122" y="188" fill="#47CCC6" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="900">为什么越来越多人不玩新游戏了</text>
+  <text x="122" y="176" fill="#47CCC6" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="900">为什么长大后，游戏</text>
+  <text x="122" y="206" fill="#47CCC6" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="900">越来越难让人着迷？</text>
   <rect x="720" y="196" width="320" height="210" rx="24" fill="#101214"/>
   <circle cx="790" cy="302" r="28" fill="#B46F32"/>
   <circle cx="968" cy="302" r="28" fill="#268884"/>
