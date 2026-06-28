@@ -19,6 +19,7 @@ export default function LibraryPage() {
         <ModuleCard title="PDF" description="文章、档案和下载文档。" href="/resources" />
         <ModuleCard title="Template" description="复用模板、结构化文档和项目框架。" />
         <ModuleCard title="Workflow" description="内容生产、研究和发布流程。" />
+        <ModuleCard title="XHS Content Lab" description="小红书内容数据记录系统。" href="/content-lab" />
         <ModuleCard title="Download" description="统一下载入口。" href="/resources" />
       </ModuleGrid>
     </FrameworkPage>

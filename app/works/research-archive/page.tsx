@@ -10,7 +10,6 @@ export const metadata: Metadata = {
 export default function ResearchArchivePage() {
   const entries = getResearchArchives();
   const tags = getResearchArchiveTags(entries);
-  const totalImages = entries.reduce((sum, entry) => sum + entry.imageCount, 0);
   const latestUpdate = entries[0]?.dateLabel ?? "待更新";
 
   return (
@@ -32,7 +31,7 @@ export default function ResearchArchivePage() {
         <section className="grid gap-3 rounded-[36px] border border-[#E4E5E2] bg-white p-7 shadow-[0_18px_60px_rgba(0,0,0,0.06)] sm:grid-cols-3 sm:p-10">
           {[
             { label: "调查数量", value: String(entries.length).padStart(3, "0") },
-            { label: "累计图片", value: String(totalImages).padStart(2, "0") },
+            { label: "累计阅读时间", value: "Coming Soon" },
             { label: "最新更新", value: latestUpdate }
           ].map((stat) => (
             <div

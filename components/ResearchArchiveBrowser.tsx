@@ -86,57 +86,63 @@ export function ResearchArchiveBrowser({ entries, tags }: ResearchArchiveBrowser
                 {year}
               </h2>
 
-              <div className="mt-8 divide-y divide-[#E4E5E2]">
+              <div className="mt-8 grid gap-6">
                 {filteredEntries
                   .filter((entry) => entry.year === year)
                   .map((entry) => (
-                    <article key={entry.id} className="py-10 first:pt-0">
-                      <Link
-                        href={entry.detailHref}
-                        className="group block overflow-hidden rounded-[28px] border border-[#E4E5E2] bg-[#F6F5F2]"
-                      >
-                        <img
-                          src={entry.cover}
-                          alt={`${entry.displayId} ${entry.title}`}
-                          className="aspect-[16/9] w-full object-cover"
-                        />
-                      </Link>
-
-                      <div className="mt-8 grid gap-8 lg:grid-cols-[160px_1fr_180px]">
-                        <div>
-                          <p className="text-3xl font-semibold tracking-[-0.04em] text-[#155F36]">
+                    <article
+                      key={entry.id}
+                      className="rounded-[28px] border border-[#E4E5E2] bg-white p-6 transition-all duration-[250ms] hover:-translate-y-1 hover:border-[rgba(21,95,54,0.28)] sm:p-8 lg:min-h-[360px]"
+                    >
+                      <div className="grid gap-6 lg:grid-cols-[52fr_48fr] lg:items-stretch lg:gap-8">
+                        <div className="flex min-w-0 flex-col">
+                          <p className="text-xl font-semibold leading-none text-[#155F36]">
                             {entry.displayId}
                           </p>
-                          <p className="mt-3 text-sm text-[#8A8C88]">{entry.dateLabel}</p>
-                        </div>
 
-                        <div>
-                          <Link href={entry.detailHref} className="group">
-                            <h3 className="max-w-4xl text-balance text-[clamp(32px,5vw,64px)] font-semibold leading-[1.05] tracking-[-0.07em] text-[#151515] transition-colors group-hover:text-[#155F36]">
+                          <Link href={entry.detailHref} className="group mt-5 block">
+                            <h3 className="line-clamp-2 h-[72px] max-w-5xl text-[30px] font-semibold leading-[1.18] tracking-[-0.05em] text-[#151515] transition-colors group-hover:text-[#155F36] sm:h-[96px] sm:text-[40px]">
                               {entry.title}
                             </h3>
                           </Link>
-                          <div className="mt-6 flex flex-wrap gap-2">
+
+                          <p className="mt-4 line-clamp-2 max-w-3xl whitespace-pre-line text-xl leading-[1.6] text-[#6D706D]">
+                            {entry.summary}
+                          </p>
+
+                          <div className="mt-5 flex flex-wrap gap-2">
                             {entry.tags.slice(0, 3).map((tag) => (
                               <span
                                 key={tag}
-                                className="rounded-full bg-[rgba(21,95,54,0.08)] px-3 py-1 text-xs font-medium text-[#155F36]"
+                                className="rounded-full bg-[rgba(21,95,54,0.08)] px-3 py-1.5 text-xs font-medium text-[#155F36]"
                               >
                                 {tag}
                               </span>
                             ))}
                           </div>
-                          <p className="mt-6 max-w-3xl text-base leading-[1.9] text-[#6D706D]">
-                            {entry.summary}
-                          </p>
+
+                          <div className="mt-6 flex flex-col gap-4 border-t border-[#E4E5E2] pt-5 sm:flex-row sm:items-center sm:justify-between lg:mt-auto">
+                            <p className="text-sm font-medium text-[#8A8C88]">{entry.dateLabel}</p>
+                            <Link
+                              href={entry.detailHref}
+                              className="inline-flex h-12 w-fit items-center gap-2 rounded-full bg-[#155F36] px-5 text-sm font-semibold text-white transition-colors hover:bg-[#0F4E2C]"
+                            >
+                              阅读全文
+                              <ArrowUpRight className="h-4 w-4" />
+                            </Link>
+                          </div>
                         </div>
 
                         <Link
                           href={entry.detailHref}
-                          className="inline-flex h-12 w-fit items-center gap-2 rounded-full bg-[#155F36] px-5 text-sm font-semibold text-white transition-colors hover:bg-[#0F4E2C] lg:justify-self-end"
+                          className="block h-[260px] overflow-hidden rounded-[24px] border border-[#E4E5E2] bg-[#111111] p-3 lg:self-center"
+                          aria-label={`阅读全文：${entry.title}`}
                         >
-                          阅读全文
-                          <ArrowUpRight className="h-4 w-4" />
+                          <img
+                            src={entry.cover}
+                            alt={`${entry.displayId} ${entry.title}`}
+                            className="h-full w-full object-contain object-center"
+                          />
                         </Link>
                       </div>
                     </article>

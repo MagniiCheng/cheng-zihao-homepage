@@ -11,6 +11,7 @@ const staticRoutes = [
   "/works/tiger-baobao",
   "/life",
   "/library",
+  "/content-lab",
   "/about",
   "/projects",
   "/pets",
