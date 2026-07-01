@@ -92,44 +92,34 @@ export function ResearchArchiveBrowser({ entries, tags }: ResearchArchiveBrowser
                   .map((entry) => (
                     <article
                       key={entry.id}
-                      className="rounded-[28px] border border-[#E4E5E2] bg-white p-6 transition-all duration-[250ms] hover:-translate-y-1 hover:border-[rgba(21,95,54,0.28)] lg:h-[260px] lg:overflow-hidden lg:px-7 lg:py-6"
+                      className="rounded-[28px] border border-[#E4E5E2] bg-white p-6 transition-all duration-200 hover:-translate-y-0.5 hover:border-[rgba(21,95,54,0.28)] lg:h-[260px] lg:overflow-hidden lg:p-7"
                     >
-                      <div className="grid gap-5 lg:grid-cols-[7fr_3fr] lg:items-stretch lg:gap-6">
-                        <div className="flex min-w-0 flex-col lg:h-[212px]">
+                      <div className="grid gap-5 lg:grid-cols-[7fr_3fr] lg:items-center lg:gap-6">
+                        <div className="flex min-w-0 flex-col lg:h-[204px]">
                           <p className="text-xl font-semibold leading-none text-[#155F36]">
                             {entry.displayId}
                           </p>
 
-                          <h3 className="mt-1 line-clamp-2 h-[71px] max-w-5xl text-[30px] font-bold leading-[1.18] tracking-[-0.05em] text-[#111111] lg:h-[101px] lg:text-[42px]">
-                            {entry.title}
-                          </h3>
+                          <Link href={entry.detailHref} className="group mt-2 block">
+                            <h3 className="line-clamp-2 max-w-5xl text-[30px] font-bold leading-[1.2] tracking-[-0.05em] text-[#111111] transition-colors group-hover:text-[#155F36] lg:h-[101px] lg:text-[42px]">
+                              {entry.title}
+                            </h3>
 
-                          <p className="mt-2 line-clamp-2 max-w-3xl whitespace-pre-line text-lg leading-[1.6] text-[#6D706D]">
-                            {entry.summary}
-                          </p>
-
-                          <p className="mt-3 text-sm leading-[1.5] text-[#8A8C88] lg:hidden">
-                            tags: {entry.tags.slice(0, 3).join(" / ")}
-                          </p>
-
-                          <div className="mt-auto hidden items-center justify-between gap-4 lg:flex">
-                            <p className="truncate text-sm leading-[1.5] text-[#8A8C88]">
-                              tags: {entry.tags.slice(0, 3).join(" / ")}
+                            <p className="mt-3 line-clamp-2 max-w-3xl whitespace-pre-line text-lg leading-[1.6] text-[#6D706D] transition-colors group-hover:text-[#333533]">
+                              {entry.summary}
                             </p>
-                            <div className="flex shrink-0 items-center gap-5">
-                              <p className="text-sm font-medium text-[#8A8C88]">{entry.dateLabel}</p>
-                              <Link
-                                href={entry.detailHref}
-                                className="text-sm font-semibold text-[#155F36] transition-colors hover:text-[#0F4E2C]"
-                              >
-                                阅读全文 →
-                              </Link>
-                            </div>
+                          </Link>
+
+                          <div className="mt-auto flex flex-col gap-3 pt-5 text-sm leading-[1.5] text-[#8A8C88] sm:flex-row sm:items-center sm:justify-between">
+                            <p className="truncate">
+                              {entry.tags.slice(0, 3).join(" · ")}
+                            </p>
+                            <p className="shrink-0 font-medium">{entry.dateLabel}</p>
                           </div>
                         </div>
 
                         <div
-                          className="h-[180px] overflow-hidden rounded-2xl border border-[#E4E5E2] bg-[#111111] p-3 lg:self-center"
+                          className="h-[160px] w-[120px] overflow-hidden rounded-2xl border border-[#E4E5E2] bg-[#111111] p-3 lg:justify-self-end"
                           aria-label={`${entry.displayId} ${entry.title}`}
                         >
                           <img
@@ -139,8 +129,7 @@ export function ResearchArchiveBrowser({ entries, tags }: ResearchArchiveBrowser
                           />
                         </div>
 
-                        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between lg:hidden">
-                          <p className="text-sm font-medium text-[#8A8C88]">{entry.dateLabel}</p>
+                        <div className="lg:hidden">
                           <Link
                             href={entry.detailHref}
                             className="text-sm font-semibold text-[#155F36] transition-colors hover:text-[#0F4E2C]"
